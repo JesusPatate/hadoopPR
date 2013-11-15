@@ -4,3 +4,6 @@
 *.jar
 *.war
 *.ear
+
+# Crawling data
+PageRankCrawler/data/
