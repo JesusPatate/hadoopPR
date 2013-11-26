@@ -53,7 +53,7 @@ public class PRCrawler extends WebCrawler {
         System.out.println("Visité : " + pageUrl); // DBG
         
         StringBuffer buf = new StringBuffer();
-        buf.append("1 " + pageUrl);
+        buf.append(pageUrl);
         
         if (page.getParseData() instanceof HtmlParseData) {
             HtmlParseData htmlParseData = (HtmlParseData) page.getParseData();

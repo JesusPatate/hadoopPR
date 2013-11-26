@@ -15,17 +15,17 @@ public class CrawlerController {
             System.out.println("\t- dataFolder : dossier dans lequel seront "
                     + "stockées des données intermédiaires nécessaires "
                     + "aux crawlers");
-            System.out.println("\t- nbCralwers : nombre de crawlers");
             System.out.println("\t- outputFolder : dossier dans lequel seront "
                     + "enregistrées les données des pages crawlées");
+            System.out.println("\t- nbCralwers : nombre de crawlers");
             return;
         }
         
         String dataFolder = args[0];
         
-        int nbCralwers = Integer.parseInt(args[1]);
+        String outputFolder = args[1];
         
-        String outputFolder = args[2];
+        int nbCralwers = Integer.parseInt(args[2]);
         
         CrawlConfig config = new CrawlConfig();
         
@@ -33,7 +33,7 @@ public class CrawlerController {
         
         config.setPolitenessDelay(1000);
         config.setMaxDepthOfCrawling(-1);
-        config.setMaxPagesToFetch(100);
+        config.setMaxPagesToFetch(1000);
         config.setResumableCrawling(false);
         
         PageFetcher pageFetcher = new PageFetcher(config);
