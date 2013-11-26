@@ -1,3 +1,5 @@
+package fr.gautier.crawler;
+
 import edu.uci.ics.crawler4j.crawler.CrawlConfig;
 import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.fetcher.PageFetcher;
@@ -22,7 +24,7 @@ public class CrawlerController {
         String dataFolder = args[0];
         
         int nbCralwers = Integer.parseInt(args[1]);
-
+        
         String outputFolder = args[2];
         
         CrawlConfig config = new CrawlConfig();
