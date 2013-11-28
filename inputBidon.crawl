@@ -1,0 +1,3 @@
+pageA	{ }
+pageB	{ (pageA) }
+pageC	{ (pageA), (pageD) }

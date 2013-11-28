@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ $# != 1 ]
 then
     echo "Usage : clean_fs.sh <nbRuns>"
 else
-    for (( c=1; c<=$1; c++ ))
+	for c in $(seq 1 $1)
     do
             hadoop fs -rmr "/pagerank/iter$c"
     done
