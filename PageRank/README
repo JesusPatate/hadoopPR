@@ -1,0 +1,5 @@
+Usage : hadoop jar pagerank.jar fr.gautier.pagerank.MapReduceJob <dir>
+
+<dir> : répertoire parent du dossier iter0 sur HDFS qui contient les fichiers en entrée.
+
+Les résultats des différentes itérations sont enregistrés dans <dir> dans des dossiers nommés iter<numIteration>.
